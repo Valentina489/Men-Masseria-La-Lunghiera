@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menù Masseria La Lunghiera</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f4e3;
+      color: #333;
+    }
+
+    header {
+      background-color: #6d8b5e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .menu-section {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      color: #6d8b5e;
+    }
+
+    .dish {
+      margin: 10px 0;
+    }
+
+    .dish-name {
+      font-weight: bold;
+    }
+    
+    .dish-description {
+      font-size: 0.95em;
+      color: #555;
+      margin-top: 0;
+    }
+
+    .dish-price {
+      float: right;
+    }
+
+    .filters {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0ead2;
+}
+
+    .filter-button {
+      background-color: #6d8b5e;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .filter-button:hover {
+      background-color: #55704a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .dish-price {
+        float: none;
+        display: block;
+        margin-top: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Menù Masseria La Lunghiera</h1>
+  <p>Tradizione, gusto e natura</p>
+</header>
+
+<div class="filters">
+  <button class="filter-button" data-category="all">Tutti</button>
+  <button class="filter-button" data-category="antipasti">Antipasti</button>
+  <button class="filter-button" data-category="panzerotti">Panzerotti</button>
+  <button class="filter-button" data-category="forno">Forno</button>
+  <button class="filter-button" data-category="brace">Brace</button>
+  <button class="filter-button" data-category="contorni">Contorni</button>
+  <button class="filter-button" data-category="dolci">Dolci</button>
+  <button class="filter-button" data-category="bevande">Bevande</button>
+</div>
+
+<div class="menu-category" data-category="antipasti">
+  <div class="menu-section">
+    <h2>Antipasti</h2>
+    <div class="dish">
+      <span class="dish-name">Focaccia con pomodoro e origano</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Selezione di latticini, formaggi e salumi della masseria</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Verdure grigliate dell’orto</span>
+    </div>
+  </div>
+</div>
+
+<div class="menu-category" data-category="panzerotti">
+  <div class="menu-section">
+    <h2>Panzerotti a scelta</h2>
+    <div class="dish">
+      <span class="dish-name">Panzerotto classico con pomodoro e mozzarella</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Panzerotto con capocollo e scamorza affumicata</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Panzerotto con mozzarella e ricotta forte</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Panzerotto con fior di zucca, guanciale e mozzarella</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Panzerotto con stracciatella, verdure grigiate e pesto di basilico</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Panzerotto con cipolla rossa d'Acquaviva, capperi e mozzarella</span>
+    </div>
+  </div>
+</div>
+
+<div class="menu-category" data-category="forno">
+  <div class="menu-section">
+    <h2>Carne cotta nel forno a legna</h2>
+
+    <div class="dish">
+      <span class="dish-name">Carne mista di bovino e suino con verdure</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Stinco di Angus con verdure</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Trippa di Angus gratinata al forno con formaggio canestrato 24 mesi</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Trònere</span>
+      <p class="dish-description">Involtino di carne di Vitello (circa 200g) farcito con pancetta e provolone e cotto tra due strati di cipolla e pomodorini.</p>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="menu-category" data-category="brace">
+  <div class="menu-section">
+    <h2>Carne cotta alla brace</h2>
+    <div class="dish">
+      <span class="dish-name">Costata di Angus alla brace cotta sulla pietra lavica (circa 600/700g)</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Salsiccia di vitello (200g)</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Salsiccia di maiale a punta di coltello</span>
+    </div>
+  </div>
+</div>
+
+<div class="menu-category" data-category="contorni">
+  <div class="menu-section">
+    <h2>Contorni</h2>
+    <div class="dish">
+      <span class="dish-name">Barattieri</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Insalata dell’orto</span>
+    </div>
+  </div>
+</div>
+
+<div class="menu-category" data-category="dolci">
+  <div class="menu-section">
+    <h2>Dolci</h2>
+    <div class="dish">
+      <span class="dish-name">Gelato artigianale della masseria</span>
+      <p class="dish-description">Nocciola e Mandorla</p>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Crostata alla frutta con crema pasticcera</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Salame al cioccolato</span>
+    </div>
+  </div>
+</div>
+
+<div class="menu-category" data-category="bevande">
+  <div class="menu-section">
+    <h2>Bevande</h2>
+    <div class="dish">
+      <span class="dish-name">Acqua naturale/effervescente naturale</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Coca-cola o Aranciata</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Birra Moretti 33cl</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Vino rosso primitivo della Masseria</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Vino rosso Primitivo Polvanera 750ml</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Vino Rosato Polvanera 750ml</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Vino bianco Minutolo Polvanera 750ml</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Spumante brut Ricciolo 750ml</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Caffè cavaliere biologico</span>
+    </div>
+    <div class="dish">
+      <span class="dish-name">Digestivo della masseria</span>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Masseria La Lunghiera – Turi (BA)<br>
+  📞 Tel: 338-4420254
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(".filter-button");
+    const categories = document.querySelectorAll(".menu-category");
+
+    filterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const selected = button.getAttribute("data-category"); // CORRETTO QUI
+
+        categories.forEach(cat => {
+          const catValue = cat.getAttribute("data-category");
+
+          if (selected === "all" || selected === catValue) {
+            cat.style.display = "block";
+          } else {
+            cat.style.display = "none";
+          }
+        });
+      });
+    });
+  });
+</script>
+</body>
+</html>

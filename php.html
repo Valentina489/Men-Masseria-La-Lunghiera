@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Menù Agriturismo</title>
+</head>
+<body>
+  <h1>Menù del Giorno</h1>
+  <form action="ordine.php" method="POST">
+    <fieldset>
+      <legend>Antipasti</legend>
+      <label><input type="checkbox" name="piatti[]" value="Antipasto misto della casa"> Antipasto misto della casa</label><br>
+      <label><input type="checkbox" name="piatti[]" value="Bruschette al pomodoro"> Bruschette al pomodoro</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Primi</legend>
+      <label><input type="checkbox" name="piatti[]" value="Orecchiette al ragù di cinghiale"> Orecchiette al ragù di cinghiale</label><br>
+      <label><input type="checkbox" name="piatti[]" value="Lasagna rustica"> Lasagna rustica</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Secondi</legend>
+      <label><input type="checkbox" name="piatti[]" value="Grigliata mista"> Grigliata mista</label><br>
+      <label><input type="checkbox" name="piatti[]" value="Polpette al sugo"> Polpette al sugo</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Dolci</legend>
+      <label><input type="checkbox" name="piatti[]" value="Torta di mandorle"> Torta di mandorle</label><br>
+      <label><input type="checkbox" name="piatti[]" value="Panna cotta al miele"> Panna cotta al miele</label>
+    </fieldset>
+
+    <br>
+    <label>Nome del cliente: <input type="text" name="cliente" required></label><br><br>
+    <input type="submit" value="Invia Ordine">
+  </form>
+</body>
+</html>

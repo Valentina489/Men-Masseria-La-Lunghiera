@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menù digitale del Ristorante La Masseria, con piatti tradizionali italiani cotti nel forno a legna e alla brace. Scopri antipasti, panzerotti, secondi, dolci e bevande.">
+    <meta name="keywords" content="ristorante, masseria, menù digitale, cucina tradizionale, forno a legna, carne alla brace, panzerotti, Puglia, cibo italiano">
+    <meta name="author" content="Ristorante La Masseria">
+    <meta name="robots" content="index, follow">
+    <link rel="alternate" hreflang="it" href="https://menu-masseria.it">
+    <link rel="alternate" hreflang="en" href="https://menu-masseria.it?lang=en">
+    <link rel="alternate" hreflang="fr" href="https://menu-masseria.it?lang=fr">
+    <title>Menù - Ristorante La Masseria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo Ristorante La Masseria" class="logo">
+        <h1 data-i18n="header.title">Menù del Ristorante La Masseria</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#antipasti" data-i18n="nav.antipasti">Antipasti della Masseria</a></li>
+            <li><a href="#panzerotti" data-i18n="nav.panzerotti">Panzerotti a Scelta</a></li>
+            <li><a href="#secondi-forno" data-i18n="nav.secondi-forno">Secondi Forno a Legna</a></li>
+            <li><a href="#secondi-brace" data-i18n="nav.secondi-brace">Secondi alla Brace</a></li>
+            <li><a href="#frutta" data-i18n="nav.frutta">Frutta Fresca</a></li>
+            <li><a href="#dolci" data-i18n="nav.dolci">Dolci</a></li>
+            <li><a href="#bevande" data-i18n="nav.bevande">Bevande</a></li>
+        </ul>
+        <div class="filter">
+            <input type="checkbox" id="vegetarian" name="vegetarian">
+            <label for="vegetarian" data-i18n="filter.vegetarian">Mostra solo piatti vegetariani</label>
+        </div>
+        <div class="language-selector">
+            <button class="lang-btn active" data-lang="it" onclick="changeLanguage('it')">
+                <img src="images/flags/it.png" alt="Italiano">
+            </button>
+            <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">
+                <img src="images/flags/en.png" alt="English">
+            </button>
+            <button class="lang-btn" data-lang="fr" onclick="changeLanguage('fr')">
+                <img src="images/flags/fr.png" alt="Français">
+            </button>
+        </div>
+    </nav>
+    <main>
+        <section id="antipasti">
+            <h2 data-i18n="section.antipasti">Antipasti della Masseria</h2>
+            <div class="menu-item">
+                <div>
+                    <h3 data-i18n="antipasti.masseria.title">Antipasti della Masseria</h3>
+                    <p data-i18n="antipasti.masseria.description.1">La produzione dei nostri formaggi è rigorosamente aziendale e avviene esclusivamente con latte fresco di Vacca di razza “Bruna”, a garanzia di genuinità e qualità.</p>
+                    <p data-i18n="antipasti.masseria.description.2">Per apprezzarne al meglio le caratteristiche, consigliamo una degustazione secondo i criteri dell’Organizzazione Nazionale Assaggiatori di Formaggio (ONAF).</p>
+                    <p data-i18n="antipasti.masseria.description.3">I sapori autentici dei nostri salumi nascono da un’attenta selezione e alimentazione dei suini allevati in azienda, e prendono forma attraverso una lavorazione sapiente, fedele alle antiche ricette della tradizione.</p>
+                    <p data-i18n="antipasti.masseria.description.4">Focaccia di grano Senatore Cappelli, cialledda, degustazione di latticini e formaggi, tagliere di salumi e zucchine alla menta. <span class="allergen" data-i18n="antipasti.masseria.allergen"> Contiene glutine, lattosio. Opzioni vegetariane disponibili su richiesta.</span></p>
+                    
+                </div>
+                <p class="price">€ 15,00</p>
+            </div>
+        </section>
+        <section id="panzerotti">
+            <h2 data-i18n="section.panzerotti">Panzerotti a Scelta</h2>
+            <div class="menu-item" data-category="vegetarian">
+                <div>
+                    <h3 data-i18n="panzerotti.mozzarella-pomodoro.title">Panzerotto Mozzarella e Pomodoro</h3>
+                    <p data-i18n="panzerotti.mozzarella-pomodoro.description">Mozzarella e salsa di pomodoro. <span class="allergen" data-i18n="panzerotti.mozzarella-pomodoro.allergen">Contiene glutine, lattosio.</span></p>
+                </div>
+                <p class="price">€ 2,50</p>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3 data-i18n="panzerotti.ricotta-forte.title">Panzerotto Forte</h3>
+                    <p data-i18n="panzerotti.ricotta-forte.description">Mozzarella, salsa di pomodoro, basilico, ricotta forte. <span class="allergen" data-i18n="panzerotti.ricotta-forte.allergen">Contiene glutine, lattosio.</span></p>
+                </div>
+                <p class="price">€ 3,00</p>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3 data-i18n="panzerotti.verd-stracc.title">Panzerotto Stracciaverde</h3>
+                    <p data-i18n="panzerotti.verd-stracc.description">Stracciatella, verdure grigliate e pesto di basilico. <span class="allergen" data-i18n="panzerotti.verd-stracc.allergen">Contiene glutine, lattosio.</span></p>
+                </div>
+                <p class="price">€ 3,00</p>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3 data-i18n="panzerotti.cap-prov.title">Panzerotto Goloso</h3>
+                    <p data-i18n="panzerotti.cap-prov.description">Mozzarella, salsa di pomodoro, capocollo e scamorza affumicata.<span class="allergen" data-i18n="panzerotti.cap-prov.allergen">Contiene glutine, lattosio.</span></p>
+                </div>
+                <p class="price">€ 3,00</p>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3 data-i18n="panzerotti.fiorito.title">Panzerotto Fiorito </h3>
+                    <p data-i18n="panzerotti.fiorito.description">Mozzarella, salsa di pomodoro, fior di zucca e guanciale.<span class="allergen" data-i18n="panzerotti.zuc-guan.allergen">Contiene glutine, lattosio.</span></p>
+                </div>
+                <p class="price">€ 3,00</p>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3 data-i18n="panzerotti.aromatico.title">Panzerotto Aromatico </h3>
+                    <p data-i18n="panzerotti.aromatico.description">Mozzarella, salsa di pomodoro, cipolla rossa d'Acquaviva e capperi.<span class="allergen" data-i18n="panzerotti.aromatico.allergen">Contiene glutine, lattosio.</span></p>
+                </div>
+                <p class="price">€ 3,00</p>
+            </div>
+        </section>
+        <section id="secondi-forno">
+            <h2 data-i18n="section.secondi-forno">Secondi di Carne cotta nel forno a legna</h2>
+            <div class="menu-item">
+                <div>
+                    <h3 data-i18n="secondi-forno.mista.title">Carne mista di bovino e suino con verdure</h3>
+                    <p data-i18n="secondi-forno.mista.description">Carne cotta nel tegame di terracotta a bassa temperatura. <span class="allergen" data-i18n="secondi-forno.mista.allergen">Senza glutine.</span></p>
+                </div>
+                <p class="price">€ 6,00</p>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3 data-i18n="secondi-forno.trippa.title">Trippa di Angus</h3>
+                    <p data-i18n="secondi-forno.trippa.description">Trippa di Angus al forno, gratinata con Canestrato stagionato 24 mesi. <span class="allergen" data-i18n="secondi-forno.trippa.allergen">Senza glutine.</span></p>
+                </div>
+                <p class="price">€ 6,00</p>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3 data-i18n="secondi-forno.trònere.title">Trònere</h3>
+                    <p data-i18n="secondi-forno.trònere.description">Involtino di vitello da circa 200g, farcito con pancetta e provolone, cotto tra due strati di cipolla e pomodorini. <span class="allergen" data-i18n="secondi-forno.trònere.allergen">Senza glutine.</span></p>
+                </div>
+                <p class="price">€ 6,00</p>
+            </div>
+        </section>
+        <section id="secondi-brace">
+            <h2 data-i18n="section.secondi-brace">Secondi di Carne cotta alla Brace</h2>
+            <div class="menu-item">
+                <div>
+                    <h3 data-i18n="secondi-brace.costata.title">Costata di Angus</h3>
+                    <p data-i18n="secondi-brace.costata.description">Costata di Angus da 600/700g cotta alla brace su pietra lavica. <span class="allergen" data-i18n="secondi-brace.costata.allergen">Contiene lattosio.</span></p>
+                </div>
+                <p class="price">€ 10,00</p>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3 data-i18n="secondi-brace.salsiccia.title">Salsiccia di Vitello</h3>
+                    <p data-i18n="secondi-brace.salsiccia.description">Salsiccia di vitello (200g), cotta alla brace. <span class="allergen" data-i18n="secondi-brace.salsiccia.allergen">Senza glutine.</span></p>
+                </div>
+                <p class="price">€ 6,00</p>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3 data-i18n="secondi-brace.salsiccia-maiale.title">Salsiccia di maiale</h3>
+                    <p data-i18n="secondi-brace.salsiccia-maiale.description"> Salsiccia di maiale (200g) a punta di coltello, cotta alla brace. <span class="allergen" data-i18n="secondi-brace.salsiccia-maiale.allergen">Senza glutine.</span></p>
+                </div>
+                <p class="price">€ 6,00</p>
+            </div>
+        </section>
+        <section id="frutta">
+            <h2 data-i18n="section.frutta">Frutta Fresca</h2>
+            <div class="menu-item" data-category="vegetarian">
+                <div>
+                    <h3 data-i18n="frutta.frutta.title">Frutta Fresca di Stagione</h3>
+                    <p data-i18n="frutta.frutta.description">Selezione di frutta fresca secondo disponibilità del giorno. <span class="allergen" data-i18n="frutta.frutta.allergen">Vegano, senza glutine.</span></p>
+                </div>
+                <p class="price">€ 4,00</p>
+            </div>
+        </section>
+        <section id="dolci">
+            <h2 data-i18n="section.dolci">Dolci</h2>
+            <div class="menu-item" data-category="vegetarian">
+                <div>
+                    <h3 data-i18n="dolci.gelato.title">Gelato artigianale della masseria</h3>
+                    <p data-i18n="dolci.gelato.description">Gusti disponibili: fiordilatte, cacao, nocciola. <span class="allergen" data-i18n="dolci.gelato.allergen">Contiene glutine, lattosio, uova.</span></p>
+                </div>
+                <p class="price">€ 3,00</p>
+            </div>
+            <div class="menu-item" data-category="vegetarian">
+                <div>
+                    <h3 data-i18n="dolci.sal-cioc.title">Salame al cioccolato</h3>
+                    <p data-i18n="dolci.sal-cioc.description"> <span class="allergen" data-i18n="dolci.sal-cioc.allergen"></span></p>
+                </div>
+                <p class="price">€ 3,00</p>
+            </div>
+        </section>
+        <section id="bevande">
+            <h2 data-i18n="section.bevande">Bevande</h2>
+            <div class="menu-item">
+                <h3 data-i18n="bevande.acqua.title">Acqua Naturale/Gassata</h3>
+                <p class="price">€ 2,00</p>
+            </div>
+            <div class="menu-item">
+                <h3 data-i18n="bevande.coca.title">Coca-cola</h3>
+                <p class="price">€ 2,50</p>
+            </div>
+            <div class="menu-item">
+                <h3 data-i18n="bevande.fanta.title">Aranciata</h3>
+                <p class="price">€ 2,50</p>
+            </div>
+            <div class="menu-item">
+                <h3 data-i18n="bevande.birra.title">Birra Moretti 33cl</h3>
+                <p class="price">€ 2,50</p>
+            </div>
+            <div class="menu-item">
+                <h3 data-i18n="bevande.vino.title">Vino della Casa</h3>
+                <p class="price">€ 5,00</p>
+            </div>
+            <div class="menu-item">
+                <h3 data-i18n="bevande.pri-polv3.title">Vino Primitivo Polvanera 375ml</h3>
+                <p class="price">€ 10,00</p>
+            </div>
+            <div class="menu-item">
+                <h3 data-i18n="bevande.pri-polv7.title">Vino Primitivo Polvanera 750ml</h3>
+                <p class="price">€ 17,00</p>
+            </div>
+            <div class="menu-item">
+                <h3 data-i18n="bevande.pri-giul.title">Vino Primitivo Petrizza Giuliani 750ml</h3>
+                <p class="price">€ 12,00</p>
+            </div>
+            <div class="menu-item">
+                <h3 data-i18n="bevande.chia-giul.title">Vino Fiano Chiancaia Giuliani 750ml</h3>
+                <p class="price">€ 12,00</p>
+            </div>
+            <div class="menu-item">
+                <h3 data-i18n="bevande.ros-polv.title">Vino Rosato Polvanera 750ml</h3>
+                <p class="price">€ 14,00</p>
+            </div>
+            <div class="menu-item">
+                <h3 data-i18n="bevande.ros-giul.title">Vino Rosato Topparello Giuliani 750ml</h3>
+                <p class="price">€ 12,00</p>
+            </div>
+            <div class="menu-item">
+                <h3 data-i18n="bevande.min-polv.title">Vino Minutolo Polvanera 750ml</h3>
+                <p class="price">€ 15,00</p>
+            </div>
+            <div class="menu-item">
+                <h3 data-i18n="bevande.spu-giul.title">Spumante Brut Ricciolo Giuliani 750ml</h3>
+                <p class="price">€ 15,00</p>
+            </div>
+            <div class="menu-item">
+                <h3 data-i18n="bevande.fontana.title">Spumante Fontana Fredda 750ml</h3>
+                <p class="price">€ 15,00</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p data-i18n="footer.contact">Contatti: info@lalunghiera.it | Tel: 338-4420254 | Seguici su Instagram</p>
+        <p><a href="#allergeni" data-i18n="footer.allergeni">Informazioni sugli allergeni</a></p>
+    </footer>
+    <script src="translations.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(() => console.log('Service Worker registrato'))
+                .catch(err => console.error('Errore Service Worker:', err));
+        }
+        document.getElementById('vegetarian').addEventListener('change', function() {
+            document.querySelectorAll('.menu-item').forEach(item => {
+                item.style.display = this.checked && !item.dataset.category.includes('vegetarian') ? 'none' : 'flex';
+            });
+        });
+        function changeLanguage(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                element.textContent = translations[lang][key] || element.textContent;
+            });
+            // Aggiorna lo stato attivo dei pulsanti
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+            // Salva la lingua selezionata (opzionale, per mantenere la scelta)
+            localStorage.setItem('selectedLanguage', lang);
+        }
+        // Imposta la lingua iniziale (default: italiano, o quella salvata)
+        const savedLang = localStorage.getItem('selectedLanguage') || 'it';
+
+        changeLanguage(savedLang);
+        window.addEventListener('scroll', () => {
+        const scrollTopBtn = document.querySelector('.scroll-top');
+        scrollTopBtn.classList.toggle('visible', window.scrollY > 200);
+    });
+    </script>
+    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+</body>
+</html>
