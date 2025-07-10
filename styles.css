@@ -38,7 +38,7 @@ h1 {
 }
 
 nav {
-    position: sticky;
+    position: static;
     top: 0;
     background: var(--light-bg);
     padding: 15px;
