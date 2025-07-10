@@ -160,12 +160,12 @@ footer a {
 @media (max-width: 600px) {
     nav {
         padding: 8px 20px; /* Riduci il padding */
-        gap: 5px;
+        gap: 3px;
     }
 
     nav ul {
         flex-direction: row;
-        gap: 5px;
+        gap: 3px;
         padding: 0;
         margin: 0;
     }
