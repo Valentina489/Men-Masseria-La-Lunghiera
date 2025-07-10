@@ -160,6 +160,7 @@ footer a {
 @media (max-width: 600px) {
     nav {
         padding: 8px 20px; /* Riduci il padding */
+        gap: 10px;
     }
 
     nav ul {
