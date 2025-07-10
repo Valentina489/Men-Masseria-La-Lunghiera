@@ -159,14 +159,15 @@ footer a {
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 5px;
         padding: 0;
         margin: 0;
     }
 
     .logo {
-        max-width: 100px; /* Riduci il logo per dispositivi piccoli */
+        max-width: 90px; /* Riduci il logo per dispositivi piccoli */
     }
     h1 {
         font-size: 24px;
