@@ -155,13 +155,24 @@ footer a {
 
 @media (max-width: 600px) {
     nav ul, .menu-item {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
         align-items: center;
     }
     .menu-item img {
         width: 80px;
         height: 80px;
+    }
+      nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    }
+    nav {
+        padding: 0;
     }
     h1 {
         font-size: 24px;
