@@ -154,25 +154,19 @@ footer a {
 }
 
 @media (max-width: 600px) {
-    nav ul, .menu-item {
-        flex-direction: row;
-        text-align: center;
+    nav {
+        padding: 8px 10px; /* Riduci il padding */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
         padding: 0;
         margin: 0;
-        width: 100%;
-        align-items: center;
     }
-    .menu-item img {
-        width: 80px;
-        height: 80px;
-    }
-      nav ul li {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    }
-    nav {
-        padding: 0;
+
+    .logo {
+        max-width: 100px; /* Riduci il logo per dispositivi piccoli */
     }
     h1 {
         font-size: 24px;
