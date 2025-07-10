@@ -160,7 +160,6 @@ footer a {
 
     nav ul {
         flex-direction: row;
-        flex-wrap: wrap;
         gap: 5px;
         padding: 0;
         margin: 0;
