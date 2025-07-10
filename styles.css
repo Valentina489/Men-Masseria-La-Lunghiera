@@ -21,7 +21,7 @@ body {
 
 header {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background: var(--primary-color) ;
     color: var(--light-bg);
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -54,7 +54,7 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 nav ul li {
