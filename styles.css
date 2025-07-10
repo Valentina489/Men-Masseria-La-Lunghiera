@@ -159,7 +159,7 @@ footer a {
 
 @media (max-width: 600px) {
     nav {
-        padding: 8px 10px; /* Riduci il padding */
+        padding: 8px 20px; /* Riduci il padding */
     }
 
     nav ul {
